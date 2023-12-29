@@ -22,7 +22,7 @@ export const projectsArray = [
     image: taskit,
     description:
       "Created a React Native task reminder app for streamlined organization, featuring reminders and task management, showcasing mobile development expertise.",
-    stack: ["React Native ", "React ", "HTML ", "CSS ", "Expo Go "],
+    stack: ["React-Native ", "React ", "HTML ", "CSS ", "Expo-Go "],
     links: {
       github: "https://github.com/Zivgl66/TaskIt",
       live: "https://task-it-zivgl66.vercel.app/",
