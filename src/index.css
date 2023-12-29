@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  /* COLORS */
+  --background_color: #0a192f;
+  --text_background_color: #112240;
+  --primary_color: #ccd6f6;
+  --secondary_color: #5ff4d2;
+  --primary_faded: #ccd6f68f;
+  --white: #ffffff;
+  --black: #000000;
+  --active: #ccd6f634;
+
+  /* font sizes */
+  --mini: 5px;
+  --tiny: 10px;
+  --small: 14px;
+  --regular: 16px;
+  --medium: 18px;
+  --large: 20px;
+  --xLarge: 24px;
+  --huge: 30px;
+  --header: 82px;
+  --humangos: 100px;
+  --biggest: 150px;
+  --mostest: 250px;
+
+  /* SIZES */
+  --small_size: 50%;
+  --regular_size: 55%;
+  --medium_size: 60%;
+  --inbetween_size: 70%;
+  --large-size: 80%;
+  --full_size: 100%;
+
+  /* MARGIN */
+  --extrasmall_margin: 2px;
+  --small_margin: 4px;
+  --medium_margin: 8px;
+  --large_margin: 12px;
+  --big_margin: 22px;
+  --huge_margin: 32px;
+
+  /* PADDING */
+  --small_padding: 5px;
+  --regular_padding: 10px;
+  --medium_padding: 20px;
+  --large_padding: 30px;
+  --big_padding: 40px;
+  --huge_padding: 50px;
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: all 200ms ease-out;
+}
+
+body {
+  background-color: var(--background_color);
+  font-family: "Heebo", sans-serif;
+}
+
+button {
+  background-color: transparent;
+  border-style: none;
+}
+button:hover {
+  cursor: pointer;
+}
