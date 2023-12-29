@@ -29,11 +29,13 @@ const Project = (props) => {
               <img src={icon_github} alt="icon for github href" />
             </a>
           </button>
-          <button>
-            <a href={props.links.live} target="_blank">
-              <img src={icon_live} alt="icon for live href" />
-            </a>
-          </button>
+          {props.links.live && (
+            <button>
+              <a href={props.links.live} target="_blank">
+                <img src={icon_live} alt="icon for live href" />
+              </a>
+            </button>
+          )}
         </div>
       </div>
       <div className="project_image">

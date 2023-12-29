@@ -25,6 +25,13 @@ const Projects = () => {
           />
         ))}
       </div>
+      <div className="other_noteworthy">
+        <h4>Other Noteworthy Projects</h4>
+        <a href="https://github.com/Zivgl66?tab=repositories" target="_blank">
+          <p>View the GitHub</p>
+        </a>
+        <ul className="projects_grid"></ul>
+      </div>
     </div>
   );
 };
