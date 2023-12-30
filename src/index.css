@@ -107,13 +107,13 @@ button:hover {
 @media (max-width: 575px) {
   :root {
     /* font sizes */
-    --mini: 1px;
-    --tiny: 2px;
-    --small: 8px;
-    --regular: 10px;
-    --medium: 12px;
-    --large: 14px;
-    --xLarge: 18px;
+    --mini: 2px;
+    --tiny: 4px;
+    --small: 10px;
+    --regular: 12px;
+    --medium: 14px;
+    --large: 16px;
+    --xLarge: 20px;
     --huge: 22px;
     --inbetween: 30px;
     --header: 52px;
