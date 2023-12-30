@@ -49,10 +49,11 @@
 }
 .contact_footer .footer_link a span img {
   transition: all 320ms ease-in-out;
-  width: var(--tiny);
+  width: 12px;
   margin-left: var(--mini);
   filter: brightness(0) saturate(100%) invert(98%) sepia(18%) saturate(5131%)
     hue-rotate(178deg) brightness(100%) contrast(93%);
+  transform: translate(0, 1.5px);
 }
 .contact_footer .footer_link a:hover {
   color: var(--secondary_color);
