@@ -44,3 +44,44 @@
   gap: var(--medium);
   position: relative;
 }
+
+/* MEDIA QUERIES ---------------------------------------------------------------- */
+@media (max-width: 575px) {
+  .margin {
+    margin-top: 0;
+  }
+  .projects_display {
+    margin-top: var(--big_margin);
+  }
+  .other_noteworthy {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: var(--big_margin);
+  }
+
+  .other_noteworthy h4 {
+    font-size: var(--xLarge);
+    color: var(--primary_color);
+  }
+  .other_noteworthy a {
+    font-size: var(--small);
+    color: var(--secondary_color);
+    text-decoration: none;
+    font-family: "Inconsolata", monospace;
+  }
+
+  .other_noteworthy a p {
+    text-align: center;
+  }
+  .projects_grid {
+    list-style: none;
+    padding: 0px;
+    margin: 50px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--medium);
+    position: relative;
+  }
+}

@@ -119,8 +119,8 @@
     font-size: var(--xLarge);
   }
   .right_description h3 {
-    font-size: var(--huge);
-    line-height: var(--huge);
+    font-size: var(--inbetween);
+    line-height: var(--inbetween);
   }
 
   .right_description h4 {

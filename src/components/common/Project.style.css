@@ -5,9 +5,6 @@
   -webkit-box-align: center;
   align-items: center;
   margin-bottom: 100px;
-  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
-    transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 #project:nth-child(odd) .project_image {
   grid-column: 1 / 8;
@@ -52,7 +49,6 @@
 .image_wrapper {
   border-radius: var(--border-radius);
   mix-blend-mode: multiply;
-  /* filter: grayscale(100%) contrast(1) brightness(90%); */
   width: 100%;
   max-width: 100%;
   vertical-align: middle;
@@ -166,4 +162,80 @@
 .project_links button:hover {
   filter: brightness(0) saturate(100%) invert(95%) sepia(83%) saturate(1417%)
     hue-rotate(147deg) brightness(100%) contrast(91%);
+}
+
+.image_cover {
+  display: none;
+}
+
+/* MEDIA QUERIES ---------------------------------------------------------------- */
+
+@media (max-width: 575px) {
+  #project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project_image {
+    display: none;
+  }
+  .image_cover {
+    display: block;
+    z-index: -99;
+    width: 350px;
+    height: 450px;
+    background-size: cover;
+    filter: contrast(20%) brightness(20%);
+    border-radius: var(--small);
+  }
+
+  .project_content {
+    position: absolute;
+  }
+  #project:nth-child(odd) .project_description {
+    margin-left: 0;
+  }
+  #project:nth-child(even) .project_description {
+    margin-right: 0;
+  }
+  .project_header {
+    text-align: center;
+    font-size: var(--medium);
+  }
+  .project_title {
+    text-align: center;
+  }
+  .project_title a {
+    font-size: var(--inbetween);
+  }
+  .project_description {
+    margin: var(--big_margin) 0;
+    background-color: transparent;
+    text-align: center;
+    box-shadow: none;
+    font-size: var(--xLarge);
+    line-height: var(--huge);
+  }
+  .project_description:hover {
+    box-shadow: none;
+  }
+  .project_stack p {
+    color: var(--secondary_color);
+    font-size: var(--regular);
+    text-align: center;
+    word-spacing: var(--small);
+    margin-bottom: var(--big_margin);
+    z-index: 2;
+    text-shadow: none;
+  }
+  .project_links {
+    text-align: center;
+  }
+  .project_links button {
+    margin-left: var(--huge_margin);
+  }
+  .project_links button a img {
+    width: var(--inbetween);
+  }
 }

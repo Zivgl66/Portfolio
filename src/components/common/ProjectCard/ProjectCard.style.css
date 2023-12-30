@@ -55,3 +55,38 @@
   word-spacing: var(--tiny);
   margin-bottom: var(--medium_margin);
 }
+
+@media (max-width: 575px) {
+  #project_card {
+    padding: var(--biggest_margin);
+    border-radius: var(--tiny);
+  }
+  .project_card_top {
+    margin-bottom: var(--big_margin);
+  }
+  .project_card_top .icon img {
+    width: var(--inbetween);
+  }
+
+  .project_card_top .project_card_links button a img {
+    width: var(--inbetween);
+    margin-left: var(--tiny);
+  }
+  .project_card_bottom .project_card_title a h3 {
+    text-align: center;
+    font-size: var(--xLarge);
+    margin-bottom: var(--big_margin);
+  }
+  .project_card_bottom .project_card_description h5 {
+    text-align: center;
+    font-size: var(--large);
+    margin-bottom: var(--biggest_margin);
+  }
+
+  .project_card_bottom .project_card_stack p {
+    font-size: var(--medium);
+    color: var(--secondary_color);
+    word-spacing: var(--tiny);
+    margin-bottom: var(--big_margin);
+  }
+}
