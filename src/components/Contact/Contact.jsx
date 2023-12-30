@@ -12,6 +12,15 @@ const Contact = () => {
           </h3>
         </div>
       </div>
+      <div className="contact_content">
+        <h3>Get In Touch</h3>
+        <p>
+          I'm currently looking for new opportunities and my inbox is always
+          open. Whether you have a job proposition, a question or just want to
+          say hi, I’ll try my best to get back to you!
+        </p>
+        <button className="header_btn">Say hello</button>
+      </div>
     </div>
   );
 };

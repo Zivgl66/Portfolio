@@ -5,3 +5,24 @@
   justify-content: center;
   margin: 0 300px;
 }
+.contact_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_content h3 {
+  color: var(--primary_color);
+  font-size: var(--inbetween);
+  margin-bottom: var(--big_margin);
+}
+.contact_content p {
+  color: var(--primary_faded);
+  font-size: var(--large);
+  text-align: center;
+  margin-bottom: var(--big_margin);
+}
+.contact_content button {
+  margin-bottom: var(--big_margin);
+}
