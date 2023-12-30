@@ -90,6 +90,8 @@
 .header {
   width: var(--full_size);
   position: absolute;
+  animation: var(--fadein);
+
   /* left: 38%;
   top: 50%;
   transform: translate(-22%, -50%); */
@@ -114,6 +116,7 @@
 .header p,
 .header .center_header {
   color: var(--primary_faded);
+  animation: var(--fadein);
 }
 .header_btn {
   border-style: solid;

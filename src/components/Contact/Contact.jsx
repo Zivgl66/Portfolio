@@ -2,17 +2,20 @@ import React from "react";
 import "./Contact.style.css";
 import icon_star from "../../assets/icons/star.svg";
 import icon_repository from "../../assets/icons/repository.svg";
+import { Fade } from "react-awesome-reveal";
 
 const Contact = () => {
   return (
     <div id="contact" className="section">
       <div className="margin">
-        <div className="title">
-          <h3>
-            <span className="numbered_header">04. </span>
-            What's next?
-          </h3>
-        </div>
+        <Fade direction="up" delay={3} triggerOnce={true}>
+          <div className="title">
+            <h3>
+              <span className="numbered_header">04. </span>
+              What's next?
+            </h3>
+          </div>{" "}
+        </Fade>
       </div>
       <div className="contact_content">
         <h3>Get In Touch</h3>

@@ -51,6 +51,10 @@
   --large_padding: 30px;
   --big_padding: 40px;
   --huge_padding: 50px;
+
+  /* TRANSITIONS */
+  --fadein: fadein 3s;
+  --fadeinbottom: fadeinbottom 3s ease-in;
 }
 
 *,
@@ -65,6 +69,27 @@ html {
 body {
   background-color: var(--background_color);
   font-family: "Heebo", sans-serif;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeinbottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 button {

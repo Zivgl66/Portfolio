@@ -4,17 +4,20 @@ import { projectsArray } from "../../constants/projectsArray";
 import { otherProjectsArray } from "../../constants/otherProjectsArray";
 import Project from "../common/Project";
 import ProjectCard from "../common/ProjectCard/ProjectCard";
+import { Fade } from "react-awesome-reveal";
 
 const Projects = () => {
   return (
     <div id="projects" className="section">
       <div className="margin">
-        <div className="title">
-          <h3>
-            <span className="numbered_header">03. </span>
-            Things I've built
-          </h3>
-        </div>
+        <Fade direction="up" delay={3} triggerOnce={true}>
+          <div className="title">
+            <h3>
+              <span className="numbered_header">03. </span>
+              Things I've built
+            </h3>
+          </div>{" "}
+        </Fade>
       </div>
       <div className="projects_display">
         {projectsArray.map((project) => (

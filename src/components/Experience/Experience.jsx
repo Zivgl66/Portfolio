@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Experience.style.css";
 import { experienceArray } from "../../constants/expereinceArray";
+import { Fade } from "react-awesome-reveal";
 
 const Experience = () => {
   const [activeExp, setActiveExp] = useState(experienceArray[0]);
@@ -8,12 +9,14 @@ const Experience = () => {
 
   return (
     <div id="experience">
-      <div className="title">
-        <h3>
-          <span className="numbered_header">02. </span>
-          My Experience
-        </h3>
-      </div>
+      <Fade direction="up" delay={3} triggerOnce={true}>
+        <div className="title">
+          <h3>
+            <span className="numbered_header">02. </span>
+            My Experience
+          </h3>
+        </div>
+      </Fade>
       <div className="content">
         <span>
           <div className="left_menu">
