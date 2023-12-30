@@ -7,7 +7,7 @@ import ProjectCard from "../common/ProjectCard/ProjectCard";
 
 const Projects = () => {
   return (
-    <div id="projects">
+    <div id="projects" className="section">
       <div className="margin">
         <div className="title">
           <h3>

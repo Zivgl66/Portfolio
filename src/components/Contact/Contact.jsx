@@ -5,7 +5,7 @@ import icon_repository from "../../assets/icons/repository.svg";
 
 const Contact = () => {
   return (
-    <div id="contact">
+    <div id="contact" className="section">
       <div className="margin">
         <div className="title">
           <h3>

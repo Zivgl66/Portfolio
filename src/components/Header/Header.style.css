@@ -1,11 +1,14 @@
 #main {
-  width: 100%;
-  height: 828px;
+  /* height: 828px; */
+  height: 100vh;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
-  width: var(--medium_size);
+  width: var(--full_size);
   position: absolute;
   left: 38%;
   top: 50%;
