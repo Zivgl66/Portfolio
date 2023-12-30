@@ -63,3 +63,35 @@
   filter: brightness(0) saturate(100%) invert(95%) sepia(83%) saturate(1417%)
     hue-rotate(147deg) brightness(100%) contrast(91%);
 }
+
+@media (max-width: 575px) {
+  #contact {
+    margin-top: var(--biggest);
+  }
+  .contact_content h3 {
+    margin: var(--big_margin) 0;
+  }
+  .contact_content p {
+    width: var(--full_size);
+    font-size: var(--large);
+    margin-bottom: var(--header);
+  }
+
+  .contact_footer {
+    margin-bottom: var(--huge_margin);
+  }
+  .contact_footer .footer_link a p {
+    margin-bottom: var(--medium_margin);
+    font-size: var(--medium);
+  }
+  .contact_footer .footer_link a span {
+    font-size: var(--large);
+    color: var(--secondary_color);
+  }
+  .contact_footer .footer_link a span img {
+    width: var(--xLarge);
+    margin-left: var(--tiny);
+    filter: brightness(0) saturate(100%) invert(95%) sepia(83%) saturate(1417%)
+      hue-rotate(147deg) brightness(100%) contrast(91%);
+  }
+}
