@@ -6,14 +6,15 @@ import room3d from "../assets/images/project_3droom.png";
 export const projectsArray = [
   {
     id: 0,
-    title: "Pokedex App",
-    image: pokedex,
+
+    title: "3D Room Portfolio",
+    image: room3d,
     description:
-      "Built a React-based Pokedex app showcasing Pokemon data. Users can easily explore detailed information about different species, demonstrating my React skills and UI/UX design.",
-    stack: ["React ", "HTML ", "CSS ", "Vercel "],
+      "Crafted a stunning 3D room portfolio website using Vite, Blender, and Three.js. Showcasing immersive designs, interactive elements, and technical skills in 3D web development.",
+    stack: ["Vite ", "Three.js ", "Blender ", "HTML ", "CSS ", "Vercel "],
     links: {
-      github: "https://github.com/Zivgl66/PokedexReact",
-      live: "https://pokedex-zivgl66.vercel.app/",
+      github: "https://github.com/Zivgl66/Portfolio-Room3D",
+      live: "https://portfolio-room3d.vercel.app/",
     },
   },
   {
@@ -42,14 +43,14 @@ export const projectsArray = [
   },
   {
     id: 3,
-    title: "3D Room Portfolio",
-    image: room3d,
+    title: "Pokedex App",
+    image: pokedex,
     description:
-      "Crafted a stunning 3D room portfolio website using Vite, Blender, and Three.js. Showcasing immersive designs, interactive elements, and technical skills in 3D web development.",
-    stack: ["Vite ", "Three.js ", "Blender ", "HTML ", "CSS ", "Vercel "],
+      "Built a React-based Pokedex app showcasing Pokemon data. Users can easily explore detailed information about different species, demonstrating my React skills and UI/UX design.",
+    stack: ["React ", "HTML ", "CSS ", "Vercel "],
     links: {
-      github: "https://github.com/Zivgl66/Portfolio-Room3D",
-      live: "https://portfolio-room3d.vercel.app/",
+      github: "https://github.com/Zivgl66/PokedexReact",
+      live: "https://pokedex-zivgl66.vercel.app/",
     },
   },
 ];

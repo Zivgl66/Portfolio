@@ -12,7 +12,10 @@ const Project = (props) => {
           <h4>Featured Project</h4>
         </div>
         <div className="project_title">
-          <a href={props.links.live} target="_blank">
+          <a
+            href={props.links.live ? props.links.live : props.links.github}
+            target="_blank"
+          >
             {props.title}
           </a>
         </div>
@@ -39,7 +42,10 @@ const Project = (props) => {
         </div>
       </div>
       <div className="project_image">
-        <a href={props.links.live} target="_blank">
+        <a
+          href={props.links.live ? props.links.live : props.links.github}
+          target="_blank"
+        >
           <div className="image_wrapper">
             <div className="overlay_image">
               <img src={white_background} alt="" />
