@@ -29,10 +29,11 @@ const Contact = () => {
             <p>Desinged & Built by Ziv Gliser</p>
             <p>
               <span>
-                <img src={icon_star} alt="star icon" /> 8
-              </span>
+                <img src={icon_star} alt="star icon" />8
+              </span>{" "}
               <span>
-                <img src={icon_repository} alt="reposirtory icon" /> 21
+                <img src={icon_repository} alt="reposirtory icon" />
+                21
               </span>
             </p>
           </a>

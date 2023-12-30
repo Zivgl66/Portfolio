@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "./Navbar.style.css";
+import CVpdf from "../../assets/Ziv Gliser CV Full Stack Developer.pdf";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -64,9 +65,11 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a href="https://ufile.io/ms8wcr9e" target="_blank">
-            Resume
-          </a>
+          <button className="nav_btn">
+            <a href={CVpdf} target="_blank">
+              Resume
+            </a>
+          </button>
         </li>
       </ul>
     </nav>

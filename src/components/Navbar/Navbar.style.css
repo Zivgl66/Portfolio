@@ -20,7 +20,7 @@ nav {
 } */
 nav.active {
   /* box-shadow: 5px 10px 30px rgba(0, 247, 255, 0.157); */
-  background: rgba(10, 25, 47, 0.562);
+  background: rgba(10, 25, 47, 0.69);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.9px);
@@ -31,7 +31,7 @@ nav.active {
 nav ul {
   display: flex;
   height: 30px;
-  width: 40%;
+  /* width: 40%; */
 }
 .active {
   color: var(--secondary_color);
@@ -75,4 +75,20 @@ nav .menu-btn,
 }
 .logo img {
   width: 80px;
+}
+.nav_btn {
+  border-style: solid;
+  border-radius: var(--mini);
+  font-size: var(--tiny);
+  /* padding: 0.5px 1px; */
+  border-color: var(--secondary_color);
+  color: var(--secondary_color);
+  box-shadow: 2px 2px 0px 0px var(--secondary_color);
+}
+.nav_btn a {
+  padding: 0px 18px;
+}
+.nav_btn a {
+  color: var(--secondary_color);
+  text-decoration: none;
 }
