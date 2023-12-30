@@ -28,7 +28,7 @@ const Contact = () => {
           <button className="header_btn">Say hello</button>
         </div>
       </Zoom>
-      <Fade direction="up" delay={500} triggerOnce={true}>
+      <Fade direction="up" triggerOnce={true}>
         <div className="contact_footer">
           <div className="footer_link">
             <a href="https://github.com/Zivgl66/Portfolio" target="_blank">

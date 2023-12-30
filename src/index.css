@@ -103,3 +103,55 @@ button:hover {
 .section {
   margin: 0 300px;
 }
+
+@media (max-width: 575px) {
+  :root {
+    /* font sizes */
+    --mini: 1px;
+    --tiny: 2px;
+    --small: 8px;
+    --regular: 10px;
+    --medium: 12px;
+    --large: 14px;
+    --xLarge: 18px;
+    --huge: 22px;
+    --inbetween: 30px;
+    --header: 52px;
+    --humangos: 62px;
+    --biggest: 82px;
+    --almost_most: 120px;
+    --mostest: 152px;
+
+    /* MARGIN */
+    --extrasmall_margin: 1px;
+    --small_margin: 2px;
+    --medium_margin: 4px;
+    --large_margin: 6px;
+    --big_margin: 10px;
+    --huge_margin: 12px;
+    --biggest_margin: 14px;
+
+    /* PADDING */
+    --small_padding: 1px;
+    --regular_padding: 4px;
+    --medium_padding: 6px;
+    --large_padding: 8px;
+    --big_padding: 10px;
+    --huge_padding: 12px;
+  }
+  .section {
+    margin: 0 50px;
+  }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}

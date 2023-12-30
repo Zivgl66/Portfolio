@@ -91,10 +91,6 @@
   width: var(--full_size);
   position: absolute;
   animation: var(--fadein);
-
-  /* left: 38%;
-  top: 50%;
-  transform: translate(-22%, -50%); */
 }
 
 .header h1 {
@@ -130,4 +126,31 @@
   box-shadow: 4px 4px 0 0 var(--secondary_color);
   transform: translate(-5px, -5px);
   transition: all 0.35s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+}
+
+@media (max-width: 575px) {
+  #main {
+    margin: 0 50px;
+  }
+  .left {
+    opacity: 0;
+  }
+  .right {
+    opacity: 0;
+  }
+  .header h1 {
+    font-size: var(--header);
+    line-height: 50px;
+    text-align: center;
+  }
+  .header .bottom_header {
+    width: var(--full_size);
+    margin-bottom: var(--biggest_margin);
+  }
+  .header p {
+    text-align: center;
+  }
+  .header_btn {
+    margin-left: 35%;
+  }
 }
