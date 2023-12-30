@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div id="contact" className="section">
       <div className="margin">
-        <Fade direction="up" delay={3} triggerOnce={true}>
+        <Fade direction="up" triggerOnce={true}>
           <div className="title">
             <h3>
               <span className="numbered_header">04. </span>
@@ -17,7 +17,7 @@ const Contact = () => {
           </div>{" "}
         </Fade>
       </div>
-      <Zoom direction="up" delay={3} triggerOnce={true}>
+      <Zoom direction="up" triggerOnce={true}>
         <div className="contact_content">
           <h3>Get In Touch</h3>
           <p>
@@ -28,7 +28,7 @@ const Contact = () => {
           <button className="header_btn">Say hello</button>
         </div>
       </Zoom>
-      <Fade direction="up" delay={5} triggerOnce={true}>
+      <Fade direction="up" delay={500} triggerOnce={true}>
         <div className="contact_footer">
           <div className="footer_link">
             <a href="https://github.com/Zivgl66/Portfolio" target="_blank">

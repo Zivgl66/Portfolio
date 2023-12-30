@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <div id="projects" className="section">
       <div className="margin">
-        <Fade direction="up" delay={3} triggerOnce={true}>
+        <Fade direction="up"  triggerOnce={true}>
           <div className="title">
             <h3>
               <span className="numbered_header">03. </span>
@@ -19,7 +19,7 @@ const Projects = () => {
           </div>{" "}
         </Fade>
       </div>
-      <Fade direction="up" delay={5} triggerOnce={true}>
+      <Fade direction="up" duration={3000} triggerOnce={true}>
         <div className="projects_display">
           {projectsArray.map((project) => (
             <Project

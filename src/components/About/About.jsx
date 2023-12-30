@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div id="about">
       <div className="title">
-        <Fade direction="up" delay={3} triggerOnce={true}>
+        <Fade direction="up" triggerOnce={true}>
           <h3>
             <span className="numbered_header">01. </span>
             About Me
@@ -15,7 +15,7 @@ const About = () => {
         </Fade>
       </div>
       <div className="content">
-        <Slide direction="left" delay={2} triggerOnce={true}>
+        <Slide direction="left" triggerOnce={true}>
           <div className="left_side">
             <div className="paragraph">
               <p>
@@ -52,7 +52,7 @@ const About = () => {
             </div>
           </div>
         </Slide>
-        <Slide direction="right" delay={2} triggerOnce={true}>
+        <Slide direction="right" triggerOnce={true}>
           <div className="right_side">
             <div className="image_container">
               <img src={profile_image} alt="my profile image" />

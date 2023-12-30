@@ -10,7 +10,7 @@ const ProjectCard = (props) => {
   return (
     <a href={props.links.github} target="_blank">
       <div id="project_card">
-        <Fade direction="up" delay={1} triggerOnce={true}>
+        <Fade direction="up" triggerOnce={true}>
           <div className="project_card_top">
             <div className="icon">
               <img src={icon_folder} alt="icon of folder" />

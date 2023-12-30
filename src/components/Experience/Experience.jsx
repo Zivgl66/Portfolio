@@ -9,7 +9,7 @@ const Experience = () => {
 
   return (
     <div id="experience">
-      <Fade direction="up" delay={3} triggerOnce={true}>
+      <Fade direction="up" triggerOnce={true}>
         <div className="title">
           <h3>
             <span className="numbered_header">02. </span>
@@ -18,7 +18,7 @@ const Experience = () => {
         </div>
       </Fade>
       <div className="content">
-        <JackInTheBox delay={3} triggerOnce={true}>
+        <JackInTheBox triggerOnce={true}>
           <span>
             <div className="left_menu">
               <ul>
