@@ -62,26 +62,10 @@
   }
 
   .other_noteworthy h4 {
-    font-size: var(--xLarge);
-    color: var(--primary_color);
+    font-size: var(--huge);
+    margin-bottom: var(--large_margin);
   }
   .other_noteworthy a {
-    font-size: var(--small);
-    color: var(--secondary_color);
-    text-decoration: none;
-    font-family: "Inconsolata", monospace;
-  }
-
-  .other_noteworthy a p {
-    text-align: center;
-  }
-  .projects_grid {
-    list-style: none;
-    padding: 0px;
-    margin: 50px 0px 0px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: var(--medium);
-    position: relative;
+    font-size: var(--medium);
   }
 }
