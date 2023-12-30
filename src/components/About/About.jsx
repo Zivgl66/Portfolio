@@ -52,15 +52,15 @@ const About = () => {
             </div>
           </div>
         </Slide>
-        <Slide direction="right" triggerOnce={true}>
-          <div className="right_side">
+        <div className="right_side">
+          <Slide direction="right" triggerOnce={true}>
             <div className="image_container">
               <img src={profile_image} alt="my profile image" />
               <div className="border"></div>
               <div className="overlay"></div>
             </div>
-          </div>
-        </Slide>
+          </Slide>
+        </div>
       </div>
     </div>
   );
