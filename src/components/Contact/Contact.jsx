@@ -25,7 +25,9 @@ const Contact = () => {
             open. Whether you have a job proposition, a question or just want to
             say hi, I’ll try my best to get back to you!
           </p>
-          <button className="header_btn">Say hello</button>
+          <button className="header_btn">
+            <a href="mailto:zivgl66@gmail.com">Say hello</a>
+          </button>
         </div>
       </Zoom>
       <Fade direction="up" triggerOnce={true}>

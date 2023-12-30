@@ -18,9 +18,9 @@ export const experienceArray = [
     workplace: "HackerU College",
     dates: "September 2022 - January 2023",
     description: [
-      "Working on a Complex, interactive game. Designing the entire system, front and back.",
-      "jdsfsdj ksdfkdsj kjsdfkj sdjks dfksdk ksjfdk ksdjfsd kjfsdk skdjfsdk fkjsd fksdjf sd.",
-      "saodsofj idjsfgijds isjdfi sdi dsjfisd sdifjsd sdjfisdj fsd.",
+      "Learned how to eat, breath and think in programming",
+      "Working on  Complex web apps. Designing the entire system, front and back.",
+      "Completed more the 500 hours of a demanding course.",
     ],
   },
   {
@@ -31,8 +31,8 @@ export const experienceArray = [
     dates: "November 2011 - September 2014",
     description: [
       "Responsible for the daily performance, availability and troubleshooting of the network.",
-      "jdsfsdj ksdfkdsj kjsdfkj sdjks dfksdk ksjfdk ksdjfsd kjfsdk skdjfsdk fkjsd fksdjf sd.",
-      "saodsofj idjsfgijds isjdfi sdi dsjfisd sdifjsd sdjfisdj fsd.",
+      "Handled daily problems and aspects of the unit.",
+      "Comunicated with different kind of people and learned to work in a team.",
     ],
   },
 ];

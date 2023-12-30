@@ -21,25 +21,27 @@ const About = () => {
               <p>
                 Hello! My name is <span className="numbered_header">Ziv</span>{" "}
                 and I enjoy creating things that live on the internet. My
-                interest in web development started back in 2012 when I decided
-                to try editing
-                <span className="numbered_header"> custom Tumblr themes</span> —
-                turns out hacking together a custom reblog button taught me a
-                lot about HTML & CSS!
+                interest in web development started back in 2020 when I decided
+                to try and become a{" "}
+                <span className="numbered_header"> web developer </span> — turns
+                out I fell in love with it right from the start!
               </p>
               <p>
-                Fast-forward to today, and I’ve had the privilege of working at
-                an advertising agency, a start-up, a huge corporation, and a
-                student-led design studio. My main focus these days is building
-                accessible, inclusive products and digital experiences at
-                Upstatement for a variety of clients.
+                Fast-forward to today, and I’ve had the privilege of completing
+                a Full-Stack Development course from{" "}
+                <span className="numbered_header"> HackerU College. </span>{" "}
+                After the course I really started my self taught joureny, I've
+                learned so much this past year.
               </p>
               <p>
-                I also recently launched a course that covers everything you
-                need to build a web app with the Spotify API using Node & React.
+                Started working on all kinds of different technologies, I
+                sharpened my skills and stayed ready for my first job
+                opportunity!
               </p>
               <p>
-                Here are a few technologies I’ve been working with recently:
+                Here are a few{" "}
+                <span className="numbered_header"> technologies</span> I’ve been
+                working with recently:
               </p>
               <ul>
                 <li>JavaScript (ES6+)</li>

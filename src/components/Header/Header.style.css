@@ -124,9 +124,7 @@
   text-decoration: none;
   color: var(--secondary_color);
 }
-.header_btn {
-  color: var(--secondary_color);
-}
+
 .header_btn:hover {
   outline: none;
   box-shadow: 4px 4px 0 0 var(--secondary_color);
