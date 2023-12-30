@@ -7,6 +7,85 @@
   align-items: center;
   margin: 0 200px;
 }
+.left {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+}
+.right {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 40px;
+  z-index: 10;
+}
+.contact_info .content a img {
+  width: var(--medium);
+  filter: brightness(0) saturate(100%) invert(98%) sepia(18%) saturate(5131%)
+    hue-rotate(178deg) brightness(100%) contrast(93%);
+}
+.contact_info .content a:hover img {
+  filter: brightness(0) saturate(100%) invert(95%) sepia(83%) saturate(1417%)
+    hue-rotate(147deg) brightness(100%) contrast(91%);
+  transform: translateY(-5px);
+}
+.contact_info .content ul {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.contact_info .content ul li {
+  margin-bottom: var(--mini);
+}
+.contact_info .content ul::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--primary_faded);
+}
+.contact_info .email {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+}
+.contact_info .email a:hover {
+  color: var(--secondary_color);
+  transform: translateY(-5px);
+}
+.contact_info .email a {
+  font-family: "Inconsolata", monospace;
+
+  text-decoration: none;
+  color: var(--primary_faded);
+  /* margin: x auto; */
+  padding: 10px;
+  /* font-family: var(--font-mono); */
+  font-size: var(--small);
+  line-height: 10px;
+  letter-spacing: 0.1em;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+.contact_info .email::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--primary_faded);
+}
 
 .header {
   width: var(--full_size);

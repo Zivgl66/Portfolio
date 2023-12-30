@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.style.css";
 import Navbar from "../Navbar/Navbar";
-
+import { icons } from "../../constants";
 
 const Header = () => {
   return (
@@ -9,11 +9,32 @@ const Header = () => {
       <Navbar />
       <div className="left contact_info">
         <div className="content">
-          <img src="" alt="" />
+          <ul>
+            <li>
+              <a href="https://github.com/Zivgl66" target="_blank">
+                <img src={icons.github} alt="github link icon" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/zivgalitzer/" target="_blank">
+                <img src={icons.instagram} alt="instagram link icon" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ziv-gliser-b0734022b/"
+                target="_blank"
+              >
+                <img src={icons.linkedin} alt="linkedin link icon" />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="right contact_info">
-        <div className="content"></div>
+        <div className="email">
+          <a href="mailto:zivgl66@gmail.com">zivgl66@gmail.com</a>
+        </div>
       </div>
       <div className="header">
         <p className="top_header">Hi, my name is</p>

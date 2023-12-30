@@ -43,11 +43,12 @@
   transition: all 320ms ease-in-out;
 }
 .contact_footer .footer_link a p {
-  font-size: var(--small);
+  font-size: var(--tiny);
+  font-family: "Inconsolata", monospace;
 }
 .contact_footer .footer_link a span img {
   transition: all 320ms ease-in-out;
-  width: var(--medium);
+  width: var(--tiny);
   filter: brightness(0) saturate(100%) invert(98%) sepia(18%) saturate(5131%)
     hue-rotate(178deg) brightness(100%) contrast(93%);
 }
