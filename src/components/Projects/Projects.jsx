@@ -19,17 +19,19 @@ const Projects = () => {
           </div>{" "}
         </Fade>
       </div>
-      <div className="projects_display">
-        {projectsArray.map((project) => (
-          <Project
-            image={project.image}
-            title={project.title}
-            description={project.description}
-            stack={project.stack}
-            links={project.links}
-          />
-        ))}
-      </div>
+      <Fade direction="up" delay={5} triggerOnce={true}>
+        <div className="projects_display">
+          {projectsArray.map((project) => (
+            <Project
+              image={project.image}
+              title={project.title}
+              description={project.description}
+              stack={project.stack}
+              links={project.links}
+            />
+          ))}
+        </div>
+      </Fade>
       <div className="other_noteworthy">
         <h4>Other Noteworthy Projects</h4>
         <a href="https://github.com/Zivgl66?tab=repositories" target="_blank">
