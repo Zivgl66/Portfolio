@@ -53,7 +53,7 @@ const Header = () => {
         <p className="bottom_header">
           I’m a software engineer specializing in building (and occasionally
           designing) exceptional digital experiences. Currently, I’m focused on
-          building accessible, human-centered products at Upstatement.
+          building accessible, human-centered products as a Freelance.
         </p>
         <button className="header_btn">
           <a
