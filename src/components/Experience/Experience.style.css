@@ -28,12 +28,9 @@
   border-left: 2px var(--active) solid;
   padding: var(--regular_padding);
   padding-left: var(--small_padding);
-  /* margin: var(--small_margin); */
   width: var(--humangos);
   text-align: left;
   transition: border 400ms ease-in-out;
-  /* display: inline-block; */
-  /* border-bottom: 1px var(--background_color) solid; */
 }
 .content span {
   display: inline-block;
@@ -45,12 +42,9 @@
 }
 .left_menu ul li .active {
   color: var(--secondary_color);
-  /* background-color: var(--active); */
   border-left: 2px var(--secondary_color) solid;
 }
-.right_description {
-  /* padding-top: 200px; */
-}
+
 .right_description h3 {
   font-size: var(--large);
   color: var(--primary_color);
@@ -83,4 +77,59 @@
   content: "@";
   color: var(--secondary_color);
   font-weight: 500;
+}
+
+@media (max-width: 575px) {
+  #experience .content {
+    margin-left: var(--large_margin);
+    align-items: center;
+  }
+
+  .left_menu {
+    height: var(--almost_most);
+    margin: var(--small_margin);
+    height: 50px;
+    margin-bottom: var(--xLarge);
+  }
+  .left_menu ul li {
+    display: inline;
+  }
+  .left_menu ul li button {
+    text-align: center;
+    font-size: var(--medium);
+    border-left: none;
+    margin-left: var(--huge);
+  }
+  .content span {
+    display: inline-block;
+    text-align: center;
+  }
+  .left_menu ul li button:hover {
+    background-color: transparent;
+    border-left: none;
+    border-bottom: 2px var(--secondary_color) solid;
+  }
+  .left_menu ul li .active {
+    border-left: none;
+    border-bottom: 2px var(--secondary_color) solid;
+  }
+  .right_description {
+    text-align: center;
+    margin: 0 var(--huge);
+    font-size: var(--xLarge);
+  }
+  .right_description h3 {
+    font-size: var(--huge);
+    line-height: var(--huge);
+  }
+
+  .right_description h4 {
+    font-size: var(--medium);
+    font-weight: 500;
+  }
+  .right_description span {
+    font-weight: 400;
+    margin: var(--medium_margin) 0;
+    width: var(--full_size);
+  }
 }
