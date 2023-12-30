@@ -2,10 +2,19 @@ import React from "react";
 import "./Header.style.css";
 import Navbar from "../Navbar/Navbar";
 
+
 const Header = () => {
   return (
     <div id="main" className="section">
       <Navbar />
+      <div className="left contact_info">
+        <div className="content">
+          <img src="" alt="" />
+        </div>
+      </div>
+      <div className="right contact_info">
+        <div className="content"></div>
+      </div>
       <div className="header">
         <p className="top_header">Hi, my name is</p>
         <h1>Ziv Gliser.</h1>

@@ -5,14 +5,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 200px;
 }
 
 .header {
   width: var(--full_size);
   position: absolute;
-  left: 38%;
+  /* left: 38%;
   top: 50%;
-  transform: translate(-22%, -50%);
+  transform: translate(-22%, -50%); */
 }
 
 .header h1 {
