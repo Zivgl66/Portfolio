@@ -119,6 +119,12 @@
   font-size: var(--small);
   padding: var(--small) var(--huge);
   border-color: var(--secondary_color);
+}
+.header_btn a {
+  text-decoration: none;
+  color: var(--secondary_color);
+}
+.header_btn {
   color: var(--secondary_color);
 }
 .header_btn:hover {
@@ -130,10 +136,9 @@
 
 /* MEDIA QUERIES ---------------------------------------------*/
 
-
 @media (max-width: 575px) {
   #main {
-    margin: 0 50px;
+    margin: 0 20px;
   }
   .left {
     opacity: 0;
@@ -144,22 +149,27 @@
   .header {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
   .header h1 {
     font-size: var(--header);
     line-height: 60px;
-    text-align: center;
+    text-align: left;
+  }
+  .header .top_header {
+    font-size: var(--large);
   }
   .header .bottom_header {
     width: var(--full_size);
     margin-bottom: var(--biggest_margin);
+    font-size: var(--large);
   }
   .header p {
-    text-align: center;
+    text-align: left;
   }
   .header_btn {
-    font-size: var(--medium);
+    margin-top: var(--biggest_margin);
+    font-size: var(--large);
   }
 }

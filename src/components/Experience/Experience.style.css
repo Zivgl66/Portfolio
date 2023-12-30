@@ -82,6 +82,14 @@
 /* MEDIA QUERIES-------------------------------------------------------------- */
 
 @media (max-width: 575px) {
+  #experience {
+    align-items: flex-start;
+    height: 100%;
+    margin-top: var(--biggest);
+  }
+  #experience .title h3 {
+    padding-left: var(--large_padding);
+  }
   #experience .content {
     align-items: center;
     flex-direction: column;

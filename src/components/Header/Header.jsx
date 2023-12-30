@@ -55,7 +55,14 @@ const Header = () => {
           designing) exceptional digital experiences. Currently, I’m focused on
           building accessible, human-centered products at Upstatement.
         </p>
-        <button className="header_btn">Check me out</button>
+        <button className="header_btn">
+          <a
+            href="https://www.linkedin.com/in/ziv-gliser-b0734022b/"
+            target="_blank"
+          >
+            Check me out
+          </a>
+        </button>
       </div>
     </div>
   );

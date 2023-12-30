@@ -105,6 +105,12 @@
 /* MEDIA QUERIES ---------------------------------------------*/
 
 @media (max-width: 575px) {
+  #about .title {
+    align-self: flex-start;
+  }
+  #about .title h3 {
+    padding-left: var(--large_padding);
+  }
   #about .content {
     flex-direction: column;
     width: var(--full_size);
@@ -116,14 +122,17 @@
     align-items: center;
   }
   .paragraph p {
-    text-align: center;
+    text-align: left;
     margin: var(--big_margin);
     font-size: var(--medium);
   }
   .paragraph ul {
-    column-gap: var(--header);
-    margin-top: var(--large);
+    column-gap: var(--humangos);
+    margin-top: var(--tiny);
+    width: var(--full_size);
+    padding-left: var(--large_padding);
   }
+
   .paragraph {
     display: flex;
     flex-direction: column;

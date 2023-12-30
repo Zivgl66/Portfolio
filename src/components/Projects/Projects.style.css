@@ -48,7 +48,7 @@
 /* MEDIA QUERIES ---------------------------------------------------------------- */
 @media (max-width: 575px) {
   .margin {
-    margin-top: 0;
+    margin-top: var(--biggest);
   }
   .projects_display {
     margin-top: var(--big_margin);
@@ -59,6 +59,7 @@
     -webkit-box-align: center;
     align-items: center;
     margin-bottom: var(--big_margin);
+    margin-top: var(--header);
   }
 
   .other_noteworthy h4 {
