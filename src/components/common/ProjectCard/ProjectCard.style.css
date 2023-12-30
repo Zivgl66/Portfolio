@@ -2,8 +2,7 @@
   background-color: var(--text_background_color);
   padding: var(--large_padding);
   border-radius: var(--mini);
-  height: var(--mostest);
-  /* width: var(--mostest); */
+  height: 100%;
   box-shadow: 0 10px 10px -15px var(--black);
 }
 #project_card:hover {
@@ -22,7 +21,7 @@
 }
 
 .project_card_top .project_card_links button a img {
-  width: var(--large);
+  width: var(--xLarge);
   margin-left: var(--mini);
   transition: all 800ms ease-in-out;
   filter: brightness(0) saturate(100%) invert(98%) sepia(18%) saturate(5131%)
@@ -36,7 +35,7 @@
 .project_card_bottom .project_card_title a h3 {
   color: var(--primary_color);
   font-size: var(--large);
-  margin-bottom: var(--medium_margin);
+  margin-bottom: var(--large_margin);
 }
 .project_card_bottom .project_card_title a h3:hover {
   color: var(--secondary_color);
@@ -54,5 +53,5 @@
   font-weight: 600;
   font-family: "Inconsolata", monospace;
   word-spacing: var(--tiny);
-  /* margin-bottom: var(--large_margin); */
+  margin-bottom: var(--medium_margin);
 }
