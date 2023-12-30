@@ -1,7 +1,9 @@
 import React from "react";
 import "./Projects.style.css";
 import { projectsArray } from "../../constants/projectsArray";
+import { otherProjectsArray } from "../../constants/otherProjectsArray";
 import Project from "../common/Project";
+import ProjectCard from "../common/ProjectCard/ProjectCard";
 
 const Projects = () => {
   return (
@@ -30,7 +32,18 @@ const Projects = () => {
         <a href="https://github.com/Zivgl66?tab=repositories" target="_blank">
           <p>View the GitHub</p>
         </a>
-        <ul className="projects_grid"></ul>
+        <ul className="projects_grid">
+          {otherProjectsArray.map((p) => (
+            <li>
+              <ProjectCard
+                links={p.links}
+                name={p.name}
+                description={p.description}
+                stack={p.stack}
+              />
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
