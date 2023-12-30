@@ -18,11 +18,43 @@
   margin-bottom: var(--big_margin);
 }
 .contact_content p {
+  width: var(--inbetween_size);
+
   color: var(--primary_faded);
-  font-size: var(--large);
+  font-size: var(--medium);
   text-align: center;
   margin-bottom: var(--big_margin);
 }
 .contact_content button {
   margin-bottom: var(--big_margin);
+}
+.contact_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--almost_most);
+  margin-bottom: var(--medium_margin);
+}
+.contact_footer .footer_link a {
+  color: var(--primary_color);
+  text-decoration: none;
+  text-align: center;
+  transition: all 320ms ease-in-out;
+}
+.contact_footer .footer_link a p {
+  font-size: var(--small);
+}
+.contact_footer .footer_link a span img {
+  transition: all 320ms ease-in-out;
+  width: var(--medium);
+  filter: brightness(0) saturate(100%) invert(98%) sepia(18%) saturate(5131%)
+    hue-rotate(178deg) brightness(100%) contrast(93%);
+}
+.contact_footer .footer_link a:hover {
+  color: var(--secondary_color);
+}
+
+.contact_footer .footer_link a:hover span img {
+  filter: brightness(0) saturate(100%) invert(95%) sepia(83%) saturate(1417%)
+    hue-rotate(147deg) brightness(100%) contrast(91%);
 }

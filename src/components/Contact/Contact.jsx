@@ -1,5 +1,7 @@
 import React from "react";
 import "./Contact.style.css";
+import icon_star from "../../assets/icons/star.svg";
+import icon_repository from "../../assets/icons/repository.svg";
 
 const Contact = () => {
   return (
@@ -20,6 +22,21 @@ const Contact = () => {
           say hi, I’ll try my best to get back to you!
         </p>
         <button className="header_btn">Say hello</button>
+      </div>
+      <div className="contact_footer">
+        <div className="footer_link">
+          <a href="https://github.com/Zivgl66/Portfolio" target="_blank">
+            <p>Desinged & Built by Ziv Gliser</p>
+            <p>
+              <span>
+                <img src={icon_star} alt="star icon" /> 8
+              </span>
+              <span>
+                <img src={icon_repository} alt="reposirtory icon" /> 21
+              </span>
+            </p>
+          </a>
+        </div>
       </div>
     </div>
   );
