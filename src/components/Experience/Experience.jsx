@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Experience.style.css";
 import { experienceArray } from "../../constants/expereinceArray";
-import { Fade, JackInTheBox } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Experience = () => {
   const [activeExp, setActiveExp] = useState(experienceArray[0]);
@@ -18,7 +18,7 @@ const Experience = () => {
         </div>
       </Fade>
       <div className="content">
-        <JackInTheBox triggerOnce={true}>
+        <Fade triggerOnce={true}>
           <span>
             <div className="left_menu">
               <ul>
@@ -26,7 +26,7 @@ const Experience = () => {
                   return (
                     <li key={exp.name + index}>
                       <button
-                        className={isActive == exp.id ? "active" : ""}
+                        className={isActive === exp.id ? "active" : ""}
                         onClick={() => {
                           setIsActive(index);
                           setActiveExp(exp);
@@ -51,7 +51,7 @@ const Experience = () => {
               <span key={desc + index}>{desc}</span>
             ))}
           </div>
-        </JackInTheBox>
+        </Fade>
       </div>
     </div>
   );

@@ -38,7 +38,6 @@ export const projectsArray = [
     stack: ["React ", "Node.js ", "MongoDB ", "HTML ", "CSS ", "Socket.io "],
     links: {
       github: "https://github.com/Zivgl66/Trivia-Backend",
-      // live: "",
     },
   },
   {

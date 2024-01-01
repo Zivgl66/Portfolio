@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <div id="projects" className="section">
       <div className="margin">
-        <Fade direction="up"  triggerOnce={true}>
+        <Fade direction="up" triggerOnce={true}>
           <div className="title">
             <h3>
               <span className="numbered_header">03. </span>
@@ -21,25 +21,30 @@ const Projects = () => {
       </div>
       <Fade direction="up" duration={3000} triggerOnce={true}>
         <div className="projects_display">
-          {projectsArray.map((project) => (
+          {projectsArray.map((project, index) => (
             <Project
               image={project.image}
               title={project.title}
               description={project.description}
               stack={project.stack}
               links={project.links}
+              key={"projects" + index}
             />
           ))}
         </div>
       </Fade>
       <div className="other_noteworthy">
         <h4>Other Noteworthy Projects</h4>
-        <a href="https://github.com/Zivgl66?tab=repositories" target="_blank">
+        <a
+          href="https://github.com/Zivgl66?tab=repositories"
+          target="_blank"
+          rel="noreferrer"
+        >
           <p>View the GitHub</p>
         </a>
         <ul className="projects_grid">
-          {otherProjectsArray.map((p) => (
-            <li>
+          {otherProjectsArray.map((p, index) => (
+            <li key={p.name + index}>
               <ProjectCard
                 links={p.links}
                 name={p.name}

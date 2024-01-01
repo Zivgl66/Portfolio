@@ -15,7 +15,7 @@ const About = () => {
         </Fade>
       </div>
       <div className="content">
-        <Slide direction="left" triggerOnce={true}>
+        <Slide direction="down" triggerOnce={true}>
           <div className="left_side">
             <div className="paragraph">
               <p>
@@ -55,9 +55,9 @@ const About = () => {
           </div>
         </Slide>
         <div className="right_side">
-          <Slide direction="right" triggerOnce={true}>
+          <Slide direction="up" triggerOnce={true}>
             <div className="image_container">
-              <img src={profile_image} alt="my profile image" />
+              <img src={profile_image} alt="my profile" />
               <div className="border"></div>
               <div className="overlay"></div>
             </div>

@@ -8,7 +8,7 @@ import { Fade } from "react-awesome-reveal";
 
 const ProjectCard = (props) => {
   return (
-    <a href={props.links.github} target="_blank">
+    <a href={props.links.github} target="_blank" rel="noreferrer">
       <div id="project_card">
         <Fade direction="up" triggerOnce={true}>
           <div className="project_card_top">
@@ -18,21 +18,25 @@ const ProjectCard = (props) => {
             <div className="project_card_links">
               {props.links.github && (
                 <button>
-                  <a href={props.links.github} target="_blank">
+                  <a href={props.links.github} target="_blank" rel="noreferrer">
                     <img src={icon_github} alt="icon for github href" />
                   </a>
                 </button>
               )}
               {props.links.live && (
                 <button>
-                  <a href={props.links.live} target="_blank">
+                  <a href={props.links.live} target="_blank" rel="noreferrer">
                     <img src={icon_live} alt="icon for live href" />
                   </a>
                 </button>
               )}
               {props.links.download && (
                 <button>
-                  <a href={props.links.download} target="_blank">
+                  <a
+                    href={props.links.download}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img src={icon_download} alt="icon for download href" />
                   </a>
                 </button>
@@ -41,7 +45,7 @@ const ProjectCard = (props) => {
           </div>
           <div className="project_card_bottom">
             <div className="project_card_title">
-              <a href={props.links.github} target="_blank">
+              <a href={props.links.github} target="_blank" rel="noreferrer">
                 <h3>{props.name}</h3>
               </a>
             </div>
