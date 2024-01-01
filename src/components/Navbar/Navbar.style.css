@@ -14,9 +14,7 @@ nav {
   padding: var(--regular_padding);
   top: -100px;
 }
-/* nav .logo {
-  height: 10px;
-} */
+
 nav.active {
   background: rgba(10, 25, 47, 0.69);
   border-radius: 16px;
@@ -184,9 +182,7 @@ nav .menu-btn,
   nav .menu-icon .nav-icon:after {
     top: -5px;
   }
-  nav .menu-btn:checked ~ .menu-icon .nav-icon {
-    /* background: transparent; */
-  }
+ 
   nav .menu-btn:checked ~ .menu-icon .nav-icon:before {
     transform: rotate(-45deg);
     top: 0;
@@ -201,8 +197,5 @@ nav .menu-btn,
   nav .menu-btn:checked ~ .menu {
     display: block;
   }
-  /* .nav_btn {
-    justify-self: center;
-    text-align: center;
-  } */
+ 
 }

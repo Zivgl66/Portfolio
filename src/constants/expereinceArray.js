@@ -19,7 +19,7 @@ export const experienceArray = [
     dates: "September 2022 - January 2023",
     description: [
       "Learned how to eat, breath and think in programming",
-      "Working on  Complex web apps. Designing the entire system, front and back.",
+      "Worked on Complex web apps. Designing the entire system, front and back.",
       "Completed more the 500 hours of a demanding course.",
     ],
   },
