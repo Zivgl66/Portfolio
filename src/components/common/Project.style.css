@@ -8,7 +8,6 @@
 }
 #project:nth-child(odd) .project_image {
   grid-column: 1 / 8;
-  grid-area: 1 / 1/ -1 / 8;
 }
 #project:nth-child(odd) .project_content {
   text-align: right;
@@ -16,10 +15,15 @@
 }
 #project:nth-child(even) .project_image {
   grid-column: 1 / 8;
-  grid-area: 1 / 6 / -1 / -1;
 }
 #project:nth-child(even) .project_content {
   grid-area: -1 / 2 / 1 / 12;
+}
+#project:nth-child(odd) .project_image {
+  grid-area: 1 / 1/ -1 / 8;
+}
+#project:nth-child(even) .project_image {
+  grid-area: 1 / 6 / -1 / -1;
 }
 .project_image {
   justify-self: center;
