@@ -6,7 +6,7 @@
   --text_background_color: #112240;
   --primary_color: #dae3ff;
   --secondary_color: #5ff4d2;
-  --primary_faded: #ccd6f68f;
+  --primary_faded: #ccd6f6cf;
   --white: #ffffff;
   --black: #000000;
   --active: #ccd6f634;
@@ -103,6 +103,7 @@ button:hover {
 .section {
   margin: 0 300px;
 }
+
 
 @media (max-width: 575px) {
   :root {

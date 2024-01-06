@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "./Navbar.style.css";
 import CVpdf from "../../assets/Ziv Gliser CV Full Stack Developer.pdf";
+import { icons } from "../../constants";
 
-const Navbar = () => {
+const Navbar = ({ setLight }) => {
   const [nav, setNav] = useState(false);
   const [y, setY] = useState(window.scrollY);
   const [isHSection, setIsHSection] = useState(true);
+  const [lightActive, setLightActive] = useState(false);
 
   //Check if user is scrolling down or up (if down, show the navbar)
   const handleNavigation = useCallback(
@@ -39,6 +41,18 @@ const Navbar = () => {
         {/* <img src={logo} alt="logo of the app" /> */}
         <span className="nav-title">Ziv</span>
       </a>
+      <button
+        onClick={() => {
+          setLight((prev) => !prev);
+          setLightActive((prev) => !prev);
+        }}
+      >
+        <img
+          src={icons.lightbulb}
+          className={`navbar_icon ${lightActive ? "activeLight" : ""}`}
+          alt=""
+        />
+      </button>
       <input type="checkbox" className="menu-btn" id="menu-btn" />
       <label className="menu-icon" htmlFor="menu-btn">
         <span className="nav-icon"></span>

@@ -1,0 +1,22 @@
+.cursor {
+  display: none;
+  width: var(--header);
+  height: var(--header);
+  filter: blur(var(--inbetween));
+  /* border: 2px solid #ffffff; */
+  border-radius: 50%;
+  background-color: var(--white);
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 999;
+  mix-blend-mode: screen;
+  transition: all 250ms ease;
+  transition-property: opacity;
+  box-shadow: 0 0 25px var(--secondary_color), 0 0 50px var(--secondary_color),
+    0 0 60px var(--secondary_color);
+}
+
+.cursor--hidden {
+  opacity: 0;
+}

@@ -2,12 +2,12 @@ import React from "react";
 import "./Header.style.css";
 import Navbar from "../Navbar/Navbar";
 import { icons } from "../../constants";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 
-const Header = () => {
+const Header = ({ setLight }) => {
   return (
-    <div id="main" className="section">
-      <Navbar />
+    <div id="main">
+      <Navbar setLight={setLight} />
       <div className="left contact_info">
         <Slide direction="up" delay={1000} triggerOnce={true}>
           <div className="content">

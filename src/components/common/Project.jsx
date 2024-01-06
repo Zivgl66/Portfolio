@@ -45,7 +45,8 @@ const Project = (props) => {
         className="image_cover"
         style={{ backgroundImage: `url(${props.image})` }}
       ></div>
-      <div className="project_image">
+
+      <div className="project_image" id="project_image">
         <a
           href={props.links.live ? props.links.live : props.links.github}
           target="_blank"

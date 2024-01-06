@@ -14,7 +14,15 @@ nav {
   padding: var(--regular_padding);
   top: -100px;
 }
-
+.navbar_icon {
+  width: var(--huge);
+  filter: invert(95%) sepia(33%) saturate(4929%) hue-rotate(178deg)
+    brightness(103%) contrast(101%);
+}
+.navbar_icon.activeLight {
+  filter: invert(96%) sepia(70%) saturate(915%) hue-rotate(87deg)
+    brightness(98%) contrast(97%);
+}
 nav.active {
   background: rgba(10, 25, 47, 0.69);
   border-radius: 16px;
@@ -182,7 +190,7 @@ nav .menu-btn,
   nav .menu-icon .nav-icon:after {
     top: -5px;
   }
- 
+
   nav .menu-btn:checked ~ .menu-icon .nav-icon:before {
     transform: rotate(-45deg);
     top: 0;
@@ -197,5 +205,4 @@ nav .menu-btn,
   nav .menu-btn:checked ~ .menu {
     display: block;
   }
- 
 }

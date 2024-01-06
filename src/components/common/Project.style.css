@@ -36,6 +36,12 @@
 .overlay_image img {
   border-radius: var(--mini);
 }
+.project_image img:hover {
+  animation: pulse 800ms ease-in-out;
+}
+.project_image img {
+  filter: url(#noise);
+}
 .project_image:hover a {
   background-color: transparent;
 }
@@ -170,6 +176,16 @@
 
 .image_cover {
   display: none;
+}
+
+@keyframes pulse {
+  from,
+  to {
+    scale: 1;
+  }
+  50% {
+    scale: 1.08;
+  }
 }
 
 /* MEDIA QUERIES ---------------------------------------------------------------- */

@@ -7,6 +7,20 @@
   align-items: center;
   margin: 0 200px;
 }
+#trailer {
+  width: var(--large);
+  height: var(--large);
+  border-radius: var(--large);
+  background-color: var(--white);
+  position: fixed;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+.App:hover #trailer {
+  opacity: 1;
+}
 .left {
   width: 40px;
   position: fixed;
