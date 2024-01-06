@@ -11,12 +11,6 @@ const Cursor = ({ light }) => {
     return () => removeEventListeners();
   }, []);
 
-  const isMobile = () => {
-    const ua = navigator.userAgent;
-    return /Android|Mobi/i.test(ua);
-  };
-  if (typeof navigator !== "undefined" && isMobile()) return null;
-
   const addEventListeners = () => {
     document.addEventListener("mousemove", onMouseMove);
     document.addEventListener("mouseenter", onMouseEnter);
