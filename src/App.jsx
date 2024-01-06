@@ -19,6 +19,7 @@ function App() {
     <div className="App">
       {typeof navigator !== "undefined" && isMobile() ? (
         ""
+        (setMobile(true))
       ) : (
         <Cursor light={light} />
       )}
