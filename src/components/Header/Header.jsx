@@ -4,10 +4,10 @@ import Navbar from "../Navbar/Navbar";
 import { icons } from "../../constants";
 import { Slide } from "react-awesome-reveal";
 
-const Header = ({ setLight }) => {
+const Header = ({ setLight, isMobile }) => {
   return (
     <div id="main">
-      <Navbar setLight={setLight} />
+      <Navbar setLight={setLight} isMobile={isMobile} />
       <div className="left contact_info">
         <Slide direction="up" delay={1000} triggerOnce={true}>
           <div className="content">

@@ -9,6 +9,7 @@ import Cursor from "./components/common/Cursor/Cursor";
 
 function App() {
   const [light, setLight] = useState(false);
+  const [mobile, setMobile] = useState(false);
   const isMobile = () => {
     const ua = navigator.userAgent;
     return /Android|Mobi/i.test(ua);
@@ -17,11 +18,11 @@ function App() {
   return (
     <div className="App">
       {typeof navigator !== "undefined" && isMobile() ? (
-        ""
+        setMobile((prev) => !prev)
       ) : (
         <Cursor light={light} />
       )}
-      <Header setLight={setLight} />
+      <Header setLight={setLight} isMobile={mobile} />
       <About />
       <Experience />
       <Projects />
