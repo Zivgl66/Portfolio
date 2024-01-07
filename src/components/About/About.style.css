@@ -163,9 +163,7 @@
   #about {
     margin-bottom: var(--almost_most);
   }
-  /* #about .title {
-    align-self: flex-start;
-  } */
+
   #about .title h3 {
     padding-left: var(--large_padding);
     font-size: var(--big);

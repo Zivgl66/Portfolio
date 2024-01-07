@@ -140,23 +140,23 @@ button:hover {
     --big_padding: 10px;
     --huge_padding: 12px;
   }
+  .section {
+    margin: 0 50px;
+  }
   .title {
     width: 250px;
     text-align: left;
   }
-  .section {
-    margin: 0 50px;
-  }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .title {
     width: 550px;
     text-align: center;
   }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
   .title {
     width: 750px;
     text-align: center;
