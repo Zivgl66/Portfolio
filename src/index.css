@@ -140,6 +140,10 @@ button:hover {
     --big_padding: 10px;
     --huge_padding: 12px;
   }
+  .title {
+    width: 250px;
+    text-align: left;
+  }
   .section {
     margin: 0 50px;
   }
@@ -157,7 +161,6 @@ button:hover {
     width: 750px;
     text-align: center;
   }
-
 }
 
 /* @media (min-width: 576px) {
