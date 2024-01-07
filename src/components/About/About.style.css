@@ -9,7 +9,7 @@
 }
 
 .title h3 {
-  font-size: var(--huge);
+  font-size: var(--big);
   color: var(--primary_color);
 }
 .title:before,
@@ -26,8 +26,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: var(--small_size);
-  font-size: var(--regular);
+  width: var(--medium_size);
+  font-size: var(--medium);
 }
 
 /* ---------------------------left side----------------------------- */
@@ -65,8 +65,8 @@
   margin-top: 10px;
 }
 .image_container img {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
   opacity: 1;
   position: absolute;
@@ -77,8 +77,8 @@
   background: #00dba84f;
   overflow: hidden;
   z-index: 2;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   border-radius: 5px;
 }
 .overlay:hover {
@@ -86,8 +86,8 @@
   border-radius: 5px;
 }
 .border {
-  height: 300px;
-  width: 300px;
+  height: 350px;
+  width: 350px;
   border: 3px solid var(--secondary_color);
   z-index: -10;
   position: absolute;
@@ -110,6 +110,7 @@
   }
   #about .title h3 {
     padding-left: var(--large_padding);
+    font-size: var(--xLarge);
   }
   #about .content {
     flex-direction: column;
@@ -154,6 +155,64 @@
   .border {
     height: 250px;
     width: 250px;
+    transform: translate(5px, 5px);
+  }
+}
+
+@media (max-width: 768px) {
+  #about {
+    margin-bottom: var(--almost_most);
+  }
+  /* #about .title {
+    align-self: flex-start;
+  } */
+  #about .title h3 {
+    padding-left: var(--large_padding);
+    font-size: var(--big);
+  }
+  #about .content {
+    flex-direction: column;
+    width: var(--full_size);
+  }
+  .paragraph p {
+    margin: var(--medium_margin);
+    font-size: var(--large);
+  }
+  .right_side {
+    margin-top: var(--big);
+    align-self: center;
+  }
+  .image_container img {
+    width: 300px;
+    height: 300px;
+  }
+  .overlay {
+    width: 300px;
+    height: 300px;
+  }
+  .border {
+    height: 300px;
+    width: 300px;
+    transform: translate(5px, 5px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .content {
+    width: var(--large-size);
+    font-size: var(--regular);
+  }
+  .image_container img {
+    width: 200px;
+    height: 200px;
+  }
+  .overlay {
+    width: 200px;
+    height: 200px;
+  }
+  .border {
+    height: 200px;
+    width: 200px;
     transform: translate(5px, 5px);
   }
 }

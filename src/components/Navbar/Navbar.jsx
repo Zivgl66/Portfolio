@@ -47,6 +47,7 @@ const Navbar = ({ setLight, isMobile }) => {
             setLight((prev) => !prev);
             setLightActive((prev) => !prev);
           }}
+          
         >
           <img
             src={icons.lightbulb}

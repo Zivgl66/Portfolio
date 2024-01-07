@@ -23,7 +23,7 @@
 
 .left_menu ul li button {
   font-family: "Inconsolata", monospace;
-  font-size: var(--regular);
+  font-size: var(--large);
   color: var(--primary_color);
   border-left: 2px var(--active) solid;
   padding: var(--regular_padding);
@@ -46,12 +46,12 @@
 }
 
 .right_description h3 {
-  font-size: var(--large);
+  font-size: var(--xLarge);
   color: var(--primary_color);
 }
 .right_description h4 {
   font-family: "Inconsolata", "sans-serif";
-  font-size: var(--small);
+  font-size: var(--medium);
   font-weight: 400;
   color: var(--primary_faded);
   margin: var(--extrasmall_margin) 0 var(--large_margin) 0;
@@ -82,6 +82,75 @@
 /* MEDIA QUERIES-------------------------------------------------------------- */
 
 @media (max-width: 575px) {
+  #experience {
+    align-items: flex-start;
+    height: 100%;
+    margin-top: var(--biggest);
+  }
+  #experience .title h3 {
+    padding-left: var(--large_padding);
+  }
+  #experience .content {
+    align-items: center;
+    flex-direction: column;
+    width: var(--full_size);
+    margin-left: 0;
+  }
+
+  .left_menu {
+    height: var(--almost_most);
+    margin: var(--small_margin);
+    height: 50px;
+    margin-bottom: var(--xLarge);
+  }
+  .left_menu ul li {
+    display: inline;
+  }
+  .left_menu ul li button {
+    text-align: center;
+    font-size: var(--medium);
+    border-left: none;
+    margin-left: var(--huge);
+  }
+  #experience .content span {
+    display: inline-block;
+    text-align: left;
+  }
+  .left_menu ul li button:hover {
+    background-color: transparent;
+    border-left: none;
+    border-bottom: 2px var(--secondary_color) solid;
+  }
+  .left_menu ul li .active {
+    border-left: none;
+    border-bottom: 2px var(--secondary_color) solid;
+  }
+
+  .right_description {
+    text-align: left;
+    margin: 0 var(--huge);
+    font-size: var(--xLarge);
+  }
+  .right_description h3 {
+    font-size: var(--inbetween);
+    line-height: var(--inbetween);
+  }
+
+  .right_description h4 {
+    font-size: var(--medium);
+    font-weight: 500;
+  }
+  .right_description .work_header {
+    font-size: var(--xLarge);
+  }
+  .right_description span {
+    font-weight: 400;
+    margin: var(--large_margin) 0;
+    width: var(--full_size);
+  }
+}
+
+@media (max-width: 768px) {
   #experience {
     align-items: flex-start;
     height: 100%;

@@ -70,3 +70,46 @@
     font-size: var(--medium);
   }
 }
+
+@media (max-width: 768px) {
+  /* #projects .title {
+    width: 768px;
+  } */
+  #projects .title h3 {
+    padding-left: var(--large_padding);
+  }
+  .margin {
+    margin-top: var(--biggest);
+  }
+  .projects_display {
+    margin-top: var(--big_margin);
+  }
+  .other_noteworthy {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: var(--big_margin);
+    margin-top: var(--header);
+  }
+
+  .other_noteworthy h4 {
+    font-size: var(--huge);
+    margin-bottom: var(--large_margin);
+    text-align: center;
+  }
+  .other_noteworthy a {
+    font-size: var(--medium);
+  }
+  .projects_grid {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: var(--large);
+  }
+}
+
+@media (max-width: 1200px) {
+  .projects_grid {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: var(--large);
+  }
+}

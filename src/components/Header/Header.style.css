@@ -1,5 +1,4 @@
 #main {
-  /* height: 828px; */
   height: 100vh;
   position: relative;
   display: flex;
@@ -7,25 +6,12 @@
   align-items: center;
   margin: 0 200px;
 }
-#trailer {
-  width: var(--large);
-  height: var(--large);
-  border-radius: var(--large);
-  background-color: var(--white);
-  position: fixed;
-  z-index: 100;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 500ms ease;
-}
-.App:hover #trailer {
-  opacity: 1;
-}
+
 .left {
   width: 40px;
   position: fixed;
   bottom: 0px;
-  left: 40px;
+  left: 20px;
   right: auto;
   z-index: 10;
 }
@@ -34,7 +20,7 @@
   position: fixed;
   bottom: 0px;
   left: auto;
-  right: 40px;
+  right: 20px;
   z-index: 10;
 }
 .contact_info .content a img {
@@ -80,12 +66,9 @@
 }
 .contact_info .email a {
   font-family: "Inconsolata", monospace;
-
   text-decoration: none;
   color: var(--primary_faded);
-  /* margin: x auto; */
   padding: 10px;
-  /* font-family: var(--font-mono); */
   font-size: var(--small);
   line-height: 10px;
   letter-spacing: 0.1em;
@@ -182,6 +165,68 @@
   }
   .header_btn {
     margin-top: var(--biggest_margin);
+    font-size: var(--large);
+  }
+}
+
+@media (max-width: 768px) {
+  #main {
+    margin: 0 50px;
+    margin-bottom: var(--almost_most);
+  }
+  .left {
+    opacity: 0;
+  }
+  .right {
+    opacity: 0;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .header h1 {
+    font-size: var(--header);
+    line-height: 80px;
+    text-align: left;
+  }
+  .header .top_header {
+    font-size: var(--large);
+  }
+  .header .bottom_header {
+    width: var(--full_size);
+    margin-bottom: var(--biggest_margin);
+    font-size: var(--large);
+  }
+  .header p {
+    text-align: left;
+  }
+  .header_btn {
+    margin-top: var(--biggest_margin);
+    font-size: var(--large);
+  }
+}
+@media (max-width: 1200px) {
+  #main {
+    margin: 0 80px;
+    margin-bottom: var(--humangos);
+  }
+  .contact_info .content a img {
+    width: var(--xLarge);
+  }
+  .header h1 {
+    font-size: var(--humangos);
+    line-height: var(--humangos);
+  }
+  .header .bottom_header {
+    width: var(--large-size);
+    font-size: var(--xLarge);
+  }
+  .header .top_header {
+    font-size: var(--large);
+  }
+  .header_btn {
     font-size: var(--large);
   }
 }
