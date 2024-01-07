@@ -146,6 +146,7 @@ button:hover {
   .title {
     width: 250px;
     text-align: left;
+    font-size: var(--xLarge);
   }
 }
 

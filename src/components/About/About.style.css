@@ -159,7 +159,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   #about {
     margin-bottom: var(--almost_most);
   }
@@ -195,7 +195,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
   .content {
     width: var(--large-size);
     font-size: var(--regular);

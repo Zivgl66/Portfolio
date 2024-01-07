@@ -91,7 +91,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   #project_card {
     padding: var(--biggest_margin);
     border-radius: var(--tiny);

@@ -89,6 +89,7 @@
   }
   #experience .title h3 {
     padding-left: var(--large_padding);
+    font-size: var(--xLarge);
   }
   #experience .content {
     align-items: center;
@@ -150,7 +151,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   #experience {
     align-items: flex-start;
     height: 100%;

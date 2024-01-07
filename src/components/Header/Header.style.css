@@ -169,7 +169,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   #main {
     margin: 0 50px;
     margin-bottom: var(--almost_most);
@@ -207,7 +207,7 @@
     font-size: var(--large);
   }
 }
-@media (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
   #main {
     margin: 0 80px;
     margin-bottom: var(--humangos);

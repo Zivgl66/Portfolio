@@ -262,7 +262,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   #project {
     display: flex;
     flex-direction: column;
@@ -339,7 +339,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
   #project {
     display: flex;
     gap: var(--medium);

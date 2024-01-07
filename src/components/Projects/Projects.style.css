@@ -46,7 +46,11 @@
 }
 
 /* MEDIA QUERIES ---------------------------------------------------------------- */
-@media (max-width: 575px) {
+@media (max-width: 576px) {
+  #projects .title h3 {
+    font-size: var(--xLarge);
+    text-align: center;
+  }
   .margin {
     margin-top: var(--biggest);
   }
@@ -71,10 +75,7 @@
   }
 }
 
-@media (max-width: 768px) {
-  /* #projects .title {
-    width: 768px;
-  } */
+@media (min-width: 576px) and (max-width: 768px) {
   #projects .title h3 {
     padding-left: var(--large_padding);
   }
@@ -107,7 +108,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
   .projects_grid {
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     gap: var(--large);
